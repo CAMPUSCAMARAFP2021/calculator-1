@@ -5,6 +5,15 @@
     </head>
     <body>
         <input type="text" name="nota" id="nota" />
-        <button onclick="alert(estoyAprobado(document.getElementById('nota').value))"> estoy aprobado?</button>
+        <button onclick="cuandoPulsoElBotonEstoyAprobado()"> estoy aprobado?</button>
     </body>
+    <script>
+
+
+        var cuandoPulsoElBotonEstoyAprobado = () => {  
+            var nota = document.getElementById('nota').value;
+            var resultado = estoyAprobado(nota);
+            alert(resultado);
+        }
+    </script>
 </html>
