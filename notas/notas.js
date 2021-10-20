@@ -1,11 +1,20 @@
 var estoyAprobado = (nota) => {
+    var resultado;
     if(nota < 5) {
-        return 'Insuficiente';
+        resultado = 'Insuficiente';
     } else if (nota < 7) {
-        return 'Suficiente';
+        resultado = 'Suficiente';
     } else if (nota < 9) {
-        return 'Notable';
+        resultado = 'Notable';
     } else {
-        return 'Sobresaliente';
+        resultado = 'Sobresaliente';
     }
+    return resultado;
+}
+
+
+var estoyAprobadoConSwitch = (nota) => {
+    var resultado ="";
+
+    return resultado;
 }
