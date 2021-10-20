@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script lang="javascript" src="./calculator.js"></script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <button onclick="pushButton('1')">1</button>
+                </td>
+                <td>
+                    <button onclick="pushButton('2')">2</button>
+                </td>
+                <td>
+                    <button onclick="pushButton('3')">3</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="pushButton('4')">4</button>
+                </td>
+                <td>
+                    <button onclick="pushButton('5')">5</button>
+                </td>
+                <td>
+                    <button onclick="pushButton('6')">6</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="pushButton('7')">7</button>
+                </td>
+                <td>
+                    <button onclick="pushButton('8')">8</button>
+                </td>
+                <td>
+                    <button onclick="pushButton('9')">9</button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="pushButton('0')">0</button>
+                </td>
+                <td></td>
+            </tr>
+
+        </table>
+        <button onclick="sumar()">+</button>
+        <button onclick="restar()">-</button>
+        <button onclick="multiplicar()">*</button>
+        <button onclick="dividir()">/</button>
+
+
+        <input type="text" name="varA" id="va" />
+        <input type="text" name="varB" id="vb"/>
+        <input type="text" name="resultado" id="res"/>
+
+
+    </body>
+</html>
