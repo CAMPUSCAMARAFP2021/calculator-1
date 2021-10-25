@@ -15,6 +15,16 @@ var estoyAprobado = (nota) => {
 
 var estoyAprobadoConSwitch = (nota) => {
     var resultado ="";
-
+    switch(true){
+        case nota < 5:
+            resultado = 'Insuficiente'; break;
+        case nota < 7:
+            resultado = "Suficiente"; break;
+        case nota < 8: 
+            resultado = "Notable"; break;
+        case nota < 10: 
+            resultado = "Sobresaliente"; break; 
+        default: resultado = "Error"; break;
+    }
     return resultado;
 }
