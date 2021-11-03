@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name">
+    <input type="number" id="age">
+    <button onClick="showMovies()">¿Que pelis puedo ver?</button>
+    <select id="movies" ></select>
+
+    <div style="background-color: coral; padding: 10px;">
+        <input type="text" id="title">
+        <input type="number" id="minAge">
+        <button onClick="createAndAddMovie()">nueva peli</button>
+
+    <input type="number" id="age">
+    </div>
+
+    <script>
+        function createAndAddMovie(){
+            var newMovie = {
+                title: document.getElementById('title').value,
+                minAge: document.getElementById('minAge').value
+            }
+            var movies = addMovie(newMovie);
+            alert('pelis en total :' + movies.length);
+        }
+
+        function showMovies() {
+            var age = document.getElementById('age').value;
+            var moviesSelectElement = document.getElementById('movies');
+            if(age === '') alert('pon tu edad tio!!');
+            else {
+                var movies = getMoviesCanISee(age);
+                moviesSelectElement.innerHTML = "";
+                movies.map((movie) => {
+                    moviesSelectElement.innerHTML += "<option>" + movie.title +"</option>"
+                });
+
+            }
+        }
+    </script>
+
+    <script lang="javascript" src="movies.js"></script>   
+</body>
+</html>
