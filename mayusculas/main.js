@@ -19,5 +19,5 @@ const mayusculas = (...args) => {
 
 
 console.log(
-    mayusculas("Hola!","mundO fsdfg","pepe", "asas" ,"lower","upper")
+    mayusculas("Hola!","múndO fsdfg","pepe", "asas" ,"lower","upper")
 );
